@@ -1,0 +1,359 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ATOCTRL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ATOCTRL.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ATOCTRL"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ATOCTRL 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ATOCTRL_DIALOG DIALOGEX 0, 0, 672, 407
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ATOCTRL"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "串口: ",IDC_STATIC,33,20,24,8
+    EDITTEXT        IDC_EDITRX,57,47,50,12,ES_AUTOHSCROLL
+    LTEXT           "RX: ",IDC_STATIC,33,49,15,8
+    CONTROL         "",IDC_RICHEDITRX,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP,33,
+                    71,209,208
+    COMBOBOX        IDC_COMBOCOMPORTNUMBER,58,18,50,76,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "关闭串口",IDC_BUTTONCOM,118,16,61,17
+    CONTROL         "",IDC_RICHEDITTX,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP,255,
+                    71,209,208
+    LTEXT           "控车档位:",IDC_STATIC,506,75,37,8
+    CONTROL         "Slider2",IDC_SLIDERMCLEVAL,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_TOP | WS_TABSTOP,523,89,
+                    28,176,WS_EX_CLIENTEDGE
+    LTEXT           "B7",IDC_STATIC,503,107,12,8
+    LTEXT           "B6",IDC_STATIC,503,119,12,8
+    LTEXT           "B5",IDC_STATIC,503,131,12,8
+    LTEXT           "B4",IDC_STATIC,503,143,12,8
+    LTEXT           "B3",IDC_STATIC,503,155,12,8
+    LTEXT           "B2",IDC_STATIC,503,167,12,8
+    LTEXT           "B1",IDC_STATIC,503,179,12,8
+    LTEXT           "P0",IDC_STATIC,503,191,12,8
+    LTEXT           "P1",IDC_STATIC,503,203,12,8
+    LTEXT           "P2",IDC_STATIC,503,215,12,8
+    LTEXT           "P3",IDC_STATIC,503,227,12,8
+    LTEXT           "P4",IDC_STATIC,503,239,12,8
+    LTEXT           "ERR",IDC_STATIC,504,251,12,8
+    CONTROL         "坡起",IDC_CHECKSLOPESTART,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,558,94,36,8
+    CONTROL         "高加速",IDC_CHECKHIGHACC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,558,110,40,8
+    CONTROL         "警惕",IDC_CHECKGUARD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,558,126,40,8
+    CONTROL         "左门门选",IDC_CHECKLEFTSELECT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,558,142,48,8
+    CONTROL         "左开门",IDC_CHECKLEFTOPEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,558,158,48,8
+    CONTROL         "右门门选",IDC_CHECKRIGHTSELECT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,558,174,48,8
+    CONTROL         "右开门",IDC_CHECKRIGHTOPEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,558,190,48,8
+    CONTROL         "ATO自动折返继电器使能",IDC_CHECKATOAUTORETURN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,558,206,99,8
+    CONTROL         "ATO模式继电器使能",IDC_CHECKATOMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,558,222,86,8
+    CONTROL         "熄灭",IDC_CHECKRETURNLEDNOLIGHT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,236,27,32,8
+    LTEXT           "ATO自动折返指示灯:",IDC_STATIC,199,15,78,8
+    CONTROL         "闪烁",IDC_CHECKRETURNGLINT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,236,41,32,8
+    CONTROL         "常亮",IDC_CHECKRETURNLIGHT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,236,55,32,8
+    LTEXT           "ATO启动按钮指示灯:",IDC_STATIC,289,15,78,8
+    CONTROL         "熄灭",IDC_CHECKATOSTARTLEDNOLIGHT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,327,28,31,8
+    CONTROL         "闪烁",IDC_CHECKATOSTARTGLINT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,327,42,31,8
+    CONTROL         "常亮",IDC_CHECKATOSTARTLIGHT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,327,56,31,8
+    LTEXT           "MA模式指示灯:",IDC_STATIC,377,15,56,8
+    CONTROL         "熄灭",IDC_CHECKMAMODELEDNOLIGHT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,399,30,31,8
+    CONTROL         "闪烁",IDC_CHECKMAMODEGLINT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,399,44,31,8
+    CONTROL         "常亮",IDC_CHECKMAMODELIGHT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,399,58,31,8
+    LTEXT           "ATO故障指示灯:",IDC_STATIC,447,13,56,8
+    CONTROL         "熄灭",IDC_CHECKATOFAULTLEDNOLIGHT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,471,28,31,8
+    CONTROL         "闪烁",IDC_CHECKATOFAULTGLINT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,471,42,31,8
+    CONTROL         "常亮",IDC_CHECKATOFAULTLIGHT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,471,56,31,8
+    LTEXT           "ATP模式输出:",IDC_STATIC,533,13,56,8
+    CONTROL         "0模式",IDC_CHECKZEROMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,545,28,44,8
+    CONTROL         "RM模式",IDC_CHECKRMMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,545,38,44,8
+    CONTROL         "CM模式",IDC_CHECKCMMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,545,48,44,8
+    CONTROL         "无效",IDC_CHECKNOMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,545,58,44,8
+    LTEXT           "EB",IDC_STATIC,503,95,12,8
+    EDITTEXT        IDC_EDITRETURNMCOUT,103,287,38,12,ES_AUTOHSCROLL
+    LTEXT           "控车档位输出回采:",IDC_STATIC,32,289,69,9
+    CONTROL         "坡起",IDC_CHECKRETURNSLOPESTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,39,363,41,8
+    CONTROL         "高加速",IDC_CHECKRETURNHIGHACC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,363,41,8
+    CONTROL         "警惕",IDC_CHECKRETURNGUARD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,363,41,8
+    CONTROL         "左门门选",IDC_CHECKRETURNLEFTSELECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,189,363,52,8
+    CONTROL         "左开门",IDC_CHECKRETURNLEFTOPEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,245,363,52,8
+    CONTROL         "右门门选",IDC_CHECKRETURNRIGHTSELECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,301,363,52,8
+    CONTROL         "右开门",IDC_CHECKRETURNRIGHTOPEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,357,363,52,8
+    CONTROL         "ATO自动折返继电器使能",IDC_CHECKRETURNATOAUTORETURN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,148,288,98,8
+    CONTROL         "ATO模式继电器使能",IDC_CHECKRETURNATOMODERALAYENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,148,306,83,8
+    LTEXT           "ATO自动折返指示灯:",IDC_STATIC,251,288,75,8
+    EDITTEXT        IDC_EDITRETURNATOAUTORETURNLED,346,288,21,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "ATO启动按钮指示灯:",IDC_STATIC,251,305,72,8
+    EDITTEXT        IDC_EDITRETURNATOSTART,346,304,21,12,ES_AUTOHSCROLL
+    LTEXT           "MA模式指示灯:",IDC_STATIC,375,339,56,8
+    EDITTEXT        IDC_EDITRETURNMAMODELED,480,336,20,12,ES_AUTOHSCROLL
+    LTEXT           "ATO故障指示灯:",IDC_STATIC,517,322,56,8
+    EDITTEXT        IDC_EDITRETURNATOFAULTLED,627,320,23,12,ES_AUTOHSCROLL
+    LTEXT           "ATP模式输出:",IDC_STATIC,517,339,56,8
+    EDITTEXT        IDC_EDITRETURNATPMODEOUT,627,336,23,12,ES_AUTOHSCROLL
+    LTEXT           "ATO模式继电器有效位:",IDC_STATIC,375,288,84,8
+    EDITTEXT        IDC_EDITRETURNATOMODEEFFECT,480,288,20,12,ES_AUTOHSCROLL
+    LTEXT           "ATO模式继电器状态位:",IDC_STATIC,375,305,84,8
+    EDITTEXT        IDC_EDITRETURNATOMODESTATUS,480,304,20,12,ES_AUTOHSCROLL
+    LTEXT           "自动折返继电器有效位:",IDC_STATIC,517,288,84,8
+    EDITTEXT        IDC_EDITRETURNATOAUTORETURNEFFECT,627,288,23,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "自动折返继电器状态位:",IDC_STATIC,517,305,84,8
+    EDITTEXT        IDC_EDITRETURNATOAUTORETURNSTATUS,627,304,23,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "取消自动折返状态:",IDC_STATIC,251,322,69,8
+    EDITTEXT        IDC_RETURNCANCELAUTORETURNSTATUS,346,320,21,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "ATO启动按钮状态:",IDC_STATIC,251,339,66,8
+    EDITTEXT        IDC_RETURNATOSTARTSTATUS,346,336,21,12,ES_AUTOHSCROLL
+    LTEXT           "MA模式按钮状态位:",IDC_STATIC,375,322,75,8
+    EDITTEXT        IDC_RETURNMAMODESTATUS,480,320,20,12,ES_AUTOHSCROLL
+    LTEXT           "司控器档位回采:",IDC_STATIC,32,306,61,9
+    EDITTEXT        IDC_EDITRETURNMC,103,304,38,12,ES_AUTOHSCROLL
+    LTEXT           "车辆响应档位回采:",IDC_STATIC,28,321,70,9
+    EDITTEXT        IDC_RETURNMCATOFACEUNIT,103,321,37,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "发送",IDC_BUTTONSEND,558,237,94,33
+    CONTROL         "坡起",IDC_CHECKRETURNSLOPESTARTRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,39,379,41,8
+    CONTROL         "高加速",IDC_CHECKRETURNHIGHACCRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,89,379,41,8
+    CONTROL         "警惕",IDC_CHECKRETURNGUARDRE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,379,41,8
+    CONTROL         "左门门选",IDC_CHECKRETURNLEFTSELECTRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,189,379,52,8
+    CONTROL         "左开门",IDC_CHECKRETURNLEFTOPENRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,245,379,52,8
+    CONTROL         "右门门选",IDC_CHECKRETURNRIGHTSELECTRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,301,379,52,8
+    CONTROL         "右开门",IDC_CHECKRETURNRIGHTOPENRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,357,379,52,8
+    LTEXT           "回采:",IDC_STATIC,13,378,20,10
+    PUSHBUTTON      "定时发送",IDC_BUTTONONTIMESEND,595,19,54,46
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "DESIGN FOR MAJIANZHONG\0"
+            VALUE "CompanyName", "北京大成通号轨道交通设备有限公司\0"
+            VALUE "FileDescription", "ATO测试程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ATOCTRL\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "DESIGN BY ZHANG HUA\0"
+            VALUE "OriginalFilename", "ATO控制测试\0"
+            VALUE "PrivateBuild", "AUTHER ZHANGHUA\0"
+            VALUE "ProductName", "ATOCTRL 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "作者  张华\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ATOCTRL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 665
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 400
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ATOCTRL(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ATOCTRL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

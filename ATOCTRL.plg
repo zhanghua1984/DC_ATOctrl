@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ATOCTRL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ATOCTRL.res" /d "NDEBUG" "E:\Project\大成源代码\ATOCTRL\ATOCTRL\ATOCTRL.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC841.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/ATOCTRL.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\大成源代码\ATOCTRL\ATOCTRL\ATOCTRL.cpp"
+"E:\Project\大成源代码\ATOCTRL\ATOCTRL\ATOCTRLDlg.cpp"
+"E:\Project\大成源代码\ATOCTRL\ATOCTRL\COMPORT.CPP"
+"E:\Project\大成源代码\ATOCTRL\ATOCTRL\Includes.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC841.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC842.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/ATOCTRL.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\大成源代码\ATOCTRL\ATOCTRL\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC842.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC882.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/ATOCTRL.pdb" /machine:I386 /out:"Release/ATOCTRL.exe" 
+".\Release\ATOCTRL.obj"
+".\Release\ATOCTRLDlg.obj"
+".\Release\COMPORT.OBJ"
+".\Release\Includes.obj"
+".\Release\StdAfx.obj"
+".\Release\ATOCTRL.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC882.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ATOCTRL.cpp
+ATOCTRLDlg.cpp
+COMPORT.CPP
+Includes.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+ATOCTRL.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
